@@ -80,9 +80,9 @@ body::after {
 }
 
 .menu-btn {
-  padding: 12px 18px;
+  padding: 12px 20px;
   border: none;
-  background-color: #dc2626;
+  background: linear-gradient(135deg, #dc2626, #991b1b);
   color: white;
   border-radius: 999px;
   cursor: pointer;
@@ -92,14 +92,14 @@ body::after {
 }
 
 .menu-btn:hover {
-  background-color: #991b1b;
-  transform: translateY(-2px);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
 }
 
 .menu-btn.active {
-  background-color: #facc15;
+  background: #facc15;
   color: black;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
 }
 
 .menu-section {
