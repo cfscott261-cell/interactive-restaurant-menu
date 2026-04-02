@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #2d2d2d;
+  line-height: 1.6;
+  padding: 20px;
+  position: relative;
+  min-height: 100vh;
+  background: transparent;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-color: #1e3a5f;
+  background-image: url("images/taco-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 70% center;
+  z-index: -2;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.22);
+  z-index: -1;
+}
+
+.hero {
+  text-align: center;
+  margin: 0 auto 30px;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px 20px;
+  border-radius: 18px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+.hero h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 4.5rem;
+  color: #dc2626;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+  text-shadow:
+    2px 2px 0 #fff,
+    4px 4px 10px rgba(0, 0, 0, 0.2);
+     transform: translateX(60px);
+}
+
+.hero p {
+  color: #16a34a;
+}
+
+
+.menu-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.menu-btn {
+  padding: 12px 18px;
+  border: none;
+  background-color: #dc2626;
+  color: white;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.menu-btn:hover {
+  background-color: #991b1b;
+  transform: translateY(-2px);
+}
+
+.menu-btn.active {
+  background-color: #facc15;
+  color: black;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.menu-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+#menu-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #991b1b;
+}
+
+#menu-display {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.menu-item {
+  background-color: white;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-align: center;
+  border-top: 5px solid #facc15;
+}
+
+.menu-item:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.16);
+}
+
+.menu-item h3 {
+  margin-bottom: 8px;
+}
+
+.menu-item p {
+  margin-bottom: 10px;
+  color: #555;
+  text-align: center;
+}
+
+.pepper {
+  font-size: 2.5rem;
+  transform: translateY(-2px);
+}
+.price {
+  font-weight: bold;
+  color: #d97706;
+}
+
+.tagline {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #b45309;
+  letter-spacing: 1px;
+}

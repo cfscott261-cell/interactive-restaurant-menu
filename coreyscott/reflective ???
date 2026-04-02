@@ -1,0 +1,20 @@
+//REFLECTIVE QUESTIONS
+
+//Question 1. How did JavaScript make your webpage interactive?
+//Answer..when a user clicks on a button, JavaScript updates the content on the page
+
+//Question 2. What did `querySelectorAll()` help you do?
+//Answer..allows you to select all the menu buttons at once
+
+//Question 3. What is the purpose of `addEventListener()`?
+//Answer..it is used to detect and respond to events, such as a user clicking a button
+
+//Question 4. Why is storing menu data in objects and arrays useful?
+//Answer 4..it allows you to store items in one place, making it easier to manage
+
+//Question 5. What was the hardest part of the project?
+//Answeer 5..the hardest part for me was making sure everything connected in javascript and
+understanding what each function was doing
+
+//Question 6. What would you add next if this were a real restaurant website?
+//Answer 6..I would add more iteractive features, more pictures next to menus items
